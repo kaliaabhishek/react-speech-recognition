@@ -32,7 +32,7 @@ To import in your React code:
 
 As only one component can be wrapped by `SpeechRecognition`, it is recommended that you add it to one of your root React components such as `App`. The transcription can then be passed down to child components.
 
-```
+```js
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import SpeechRecognition from "react-speech-recognition";
@@ -70,7 +70,7 @@ export default SpeechRecognition(Dictaphone);
 
 You can configure the default initial state of the Speech Recognition API. To change these defaults, you need to pass an options object into the wrapper like so:
 
-```
+```js
 const options = {
   autoStart: false
 }
